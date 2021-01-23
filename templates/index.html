@@ -2,32 +2,8 @@
 
 {% block head %}
 <title>Index</title>
-<style>
-    .wrapper {
-        overflow: hidden;
-    }
-
-    .sliding-background {
-        background: url("static/slidingbgimg.jpg") repeat-x;
-        height: 560px;
-        width: 5076px;
-        animation: slide 60s linear infinite;
-    }
-
-    @keyframes slide {
-        0% {
-            transform: translate3d(0, 0, 0);
-        }
-
-        100% {
-            transform: translate3d(-1692px, 0, 0);
-        }
-    }
-</style>
 {% endblock %}
 
 {% block body %}
-<div class="wrapper">
-    <div class="sliding-background"></div>
-</div>
+<h1>RateMyPortfolio.co</h1>
 {% endblock %}
