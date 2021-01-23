@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-<form class="form-group" class="text-center"
+<form action="/form_signup" method="POST" class="form-group" class="text-center"
     style="border: 3px solid black; padding: 18px; margin-top: 150px;  margin-bottom: 200px; background-color:#ECEFF1; box-shadow: 10px 10px 10px 10px; border-radius: 10px; max-width: 720px; margin: 100px auto 16px; ">
     <h1 style="color:#ffa100; font: italic; text-decoration: initial; font-weight: bold; font-size: 40px; margin: 0 0 8px;"
         align="center" class="form-group">Sign Up</h1>
@@ -20,7 +20,7 @@
 
     <div align="center">
 
-        <input type="button" class=" btn btn-info" value="Submit">
+        <input type="submit" class=" btn btn-info" value="Submit">
     </div>
 </form>
 {% endblock %}
