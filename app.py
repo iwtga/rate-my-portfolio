@@ -16,8 +16,6 @@ config ={
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
-database = {'warren': 'warren271001'}
-
 @app.route('/')
 @app.route('/index')
 def index():
@@ -43,7 +41,7 @@ def login():
         if auth.sign_in_with_email_and_password(email,password):
             return render_template('home.html')
         else:
-            return  render_template('error.html')
+            return  render_template('error.html', errorcode="Incorrect Login", errormessage="Incorrect credentials")
         
 @app.route('/signup')
 def signuppage():
@@ -58,8 +56,6 @@ def signup():
         password = request.form['password']
         auth.create_user_with_email_and_password(email,password)
         return render_template('home.html')
-        
-    
 
 if __name__ == "__main__":
     app.run(debug=True)
