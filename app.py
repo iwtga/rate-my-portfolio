@@ -4,14 +4,14 @@ import pyrebase
 app = Flask(__name__)
 
 config ={
-    "apiKey": "AIzaSyDHpOYyNgtYcrnCORHLHLyPDK4bdgY4_Vs",
-    "authDomain": "ratemyportfolio-39e05.firebaseapp.com",
-    "databaseURL": "https://ratemyportfolio-39e05-default-rtdb.firebaseio.com/",
-    "projectId": "ratemyportfolio-39e05",
-    "storageBucket": "ratemyportfolio-39e05.appspot.com",
-    "messagingSenderId": "115042671407",
-    "appId": "1:115042671407:web:403f102924080cf89b1fda",
-    "measurementId": "G-RMQFGMEQYV"
+    "apiKey": "",
+    "authDomain": "",
+    "databaseURL": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": "",
+    "appId": "",
+    "measurementId": ""
 }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
